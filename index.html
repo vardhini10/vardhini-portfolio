@@ -8,211 +8,206 @@
     <script src="https://kit.fontawesome.com/ac6114109a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src ="images/logo.png.png" class="logo">
-                    <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#work">My work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <p>Data Science Student</p>
+            <h1>Hi, I'm <span>Vardhini Reddy</span><br>from Siddipet</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.jpg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I'm a Data Science student with hands-on experience in data analysis,
+                    machine learning, and web development. I enjoy building real-world
+                    projects using Python, Java, SQL, and modern web technologies.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills-tab', event)">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                    <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills-tab">
+                    <ul>
+                        <li><span>Frontend</span><br>HTML, CSS, JavaScript, React</li>
+                        <li><span>Backend</span><br>Java (Servlets), Node.js, Python</li>
+                        <li><span>Database</span><br>MySQL, Oracle, MongoDB</li>
                     </ul>
-                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Data Science Student</p>
-                <h1>Hi,I'm <span>Vardhini Reddy</span><br> from Siddipet</h1>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2025 - Present</span><br>Web & Data Science Projects</li>
+                        <li><span>2024 - 2025</span><br>Online Quiz System (React)</li>
+                        <li><span>2023 - 2024</span><br>Instagram Reach Analysis</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - 2026</span><br>B.Tech CSE (Data Science)</li>
+                        <li><span>2020 - 2022</span><br>Intermediate</li>
+                        <li><span>2020</span><br>Secondary Education</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
-    <!-- ---about--- -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user1.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I'm a Data Science student with a strong interest in solving real-world problems using data. I have hands-on experience in data analysis and machine learning,
-                    and I'm comfortable working with a variety of tools and languages like Python, Java, R, SQL, HTML, CSS, and JavaScript.
-                    I've worked on projects where I built predictive models, analyzed complex datasets, and created visualizations to make data easier to understand. 
-                    I'm excited to apply what I've learned in a company that values innovation, teamwork, and data-driven decision-making, and I’m always eager to keep learning and take on new challenges.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links"onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab"id="skills">
-                        <ul>
-                            <li><span>Frontend</span><br>HTML, CSS, JavaScript</li>
-                            <li><span>Backend</span><br>Java (Servlets, Spring), Node.js,Python</li>
-                            <li><span>Database</span><br>Relational Databases: MySQL, Oracle NoSQL Databases: MongoDB, Firebase</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents"id="experience">
-                        <ul>
-                            <li><span>2025 - Current</span><br>Building projects on web development.</li>
-                            <li><span>2024 - 2025</span><br>Worked on Online Quiz System using react.</li>
-                            <li><span>2023-2024</span><br>Instagram reach analysis - Data analysis explore.</li>
+</div>
 
-                        </ul>
-                    </div>
-                    <div class="tab-contents"id="education">
-                        <ul>
-                            <li><span>2022 - 2026</span><br>B.Tech in CSE-Data Science</li>
-                            <li><span>2020 - 2022</span><br>Intermediate </li>
-                            <li><span>2020</span><br> Secondary education from KTS</li>
-
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- ----------Services-------- -->
-<div id="skills">
+<div id="services">
     <div class="container">
         <h1 class="sub-title">Skills</h1>
+
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Proficient in web development using HTML, CSS, and JavaScript to build responsive and interactive user interfaces. Experienced with modern tools and frameworks like Bootstrap, Tailwind CSS, and React.js, along with version control using Git and GitHub. Familiar with development environments such as VS Code, Chrome DevTools, and build tools like Vite and npm.</p>
-                <a href="#">Learn more</a>
+                <h2>Web Development</h2>
+                <p>
+                    Building responsive websites using HTML, CSS, JavaScript,
+                    React, Git, GitHub, Vite, and modern UI tools.
+                </p>
             </div>
+
             <div>
                 <i class="fa-brands fa-python"></i>
-                <h2>Python</h2>
-                <p>Proficient in Python for data analysis, automation, and web development. Experienced with libraries like NumPy, Pandas, Matplotlib, and Scikit-learn for data science, and tools like Flask and Django for backend development. Comfortable with writing clean, efficient code and working in Jupyter Notebooks or VS Code.
-</p>
-                <a href="#">Learn more</a>
+                <h2>Python & Data Science</h2>
+                <p>
+                    Data analysis, visualization, machine learning using
+                    NumPy, Pandas, Matplotlib, Scikit-learn.
+                </p>
             </div>
+
             <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>App Design</h2>
-                <p>App Design involves creating visually appealing and user-friendly interfaces for mobile or desktop applications that ensure smooth navigation and functionality. It focuses on optimizing the user experience by aligning design elements with the app's purpose and target audience needs.</p>
-                <a href="#">Learn more</a>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java Development</h2>
+                <p>Building secure and scalable applications using Core Java, JDBC, and Servlets.</p>
             </div>
-            
         </div>
+    </div>
 </div>
-</div>
-<!-- portfolio-->
-<div id="portfolio">
+
+
+<div id="work">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
+
         <div class="work-list">
             <div class="work">
-                <img src="images/insta.jpg" alt="Instagram Reach Analysis">
+                <img src="images/insta.jpg">
                 <div class="layer">
                     <h3>Instagram Reach Analysis</h3>
-                    <p>The Instagram Reach Analysis project uses data analytics to assess engagement, content performance, and audience reach by analyzing metrics like impressions, likes, comments, and follower growth. It provides insights to optimize content strategy and improve social media impact through data-driven decisions. </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p>The Instagram Reach Analysis project uses data analytics to assess engagement, content performance, and audience reach by analyzing metrics like impressions, likes, comments, and follower growth. It provides insights to optimize content strategy and improve social media impact through data-driven decisions.</p>
                 </div>
             </div>
+
             <div class="work">
-                <img src="images/quiz.jpg" alt="Online Quiz System ">
+                <img src="images/quiz.jpg">
                 <div class="layer">
-                    <h3> Online Quiz System</h3>
+                    <h3>Online Quiz System</h3>
                     <p>The Online Quiz System is a web-based application that allows admins to manage quizzes and students to take timed assessments remotely. Built with Java (Servlets, JSP, JDBC) and React.js, it offers secure role-based access, automated grading, real-time interaction, and result analysis, making it ideal for educational and training purposes.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
+
             <div class="work">
-                <img src="images/soil.jpg" alt="Soil Analysis">
+                <img src="images/soil.jpg">
                 <div class="layer">
                     <h3>Soil Analysis</h3>
-                    <p>Soil analysis in R involves examining soil properties like pH, nutrients, 
-                    and texture using tools for data processing, visualization, and spatial mapping. With packages like `tidyverse`, `ggplot2`, `sf`, and `terra`, R enables efficient analysis, classification, and mapping of soil data for agricultural and environmental insights.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p>Soil analysis in R involves examining soil properties like pH, nutrients, and texture using tools for data processing, visualization, and spatial mapping. With packages like tidyverse, ggplot2, sf, and terra, R enables efficient analysis, classification, and mapping of soil data for agricultural and environmental insights.</p>
                 </div>
             </div>
-            <a href="#" class="btn"> See More</a>
         </div>
     </div>
 </div>
-<!--contact-->
-<div id="contact" class="contact">
-    <div class="row">
-        <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-paper-plane"></i>vardhinikaduduri@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>7288877762</p>
-            <div class="social-icons">
-                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> vardhinikaduduri@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 7288877762</p>
+
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/vardhini-kaduduri/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/vardhini10" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <a href="images/CV(180).pdf" download class="btn btn2">Download CV</a>
             </div>
-            <a href="images/CV(180).pdf" download class="btn btn2">Download CV</a>
-        </div>
-        <div class="contact-right">
-            <form name="submit-to-google-sheet">
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="Email" placeholder="Your Email" required>
-                <textarea name="Message"rows=6 placeholder="Your Message"></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span class="msg"></span>
-        </div>
 
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
     </div>
+
     <div class="copy-right">
-        <p>Copyright © Vardhini Kaduduri 2025.<i class="fa-solid fa-heart"></i> All rights reserved.</p>
+        <p>© 2025 Vardhini Kaduduri ❤️ All rights reserved</p>
     </div>
 </div>
-
-
-
 
 <script>
-        var tablinks =document.getElementsByClassName("tab-links");
-        var tabcontents =document.getElementsByClassName("tab-contents");
-        
-        function opentab(tabname){
-            for(let tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(let tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-            
-        }
-    </script>
-    <script>
-        var sidemenu=document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right="0";
-        }
-        function closemenu(){
-            sidemenu.style.right="-200px";
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxT3QNEokoRfn4a3WtLoJ0s2cDmq0k1YrR6b-kA6nUZ2M4hBp0o916iPtkTJ_BqxQAVCw/exec'
-            const form = document.forms['submit-to-google-sheet']
-            const msg=document.getElementById("msg")
+function opentab(tabname, event) {
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
 
-            form.addEventListener('submit', e => {
-                e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function(){
-                        msg.innerHTML=" "
-                    },5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-            })
+    for (let link of tablinks) link.classList.remove("active-link");
+    for (let content of tabcontents) content.classList.remove("active-tab");
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+let sidemenu = document.getElementById("sidemenu");
+function openmenu() { sidemenu.style.right = "0"; }
+function closemenu() { sidemenu.style.right = "-200px"; }
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxT3QNEokoRfn4a3WtLoJ0s2cDmq0k1YrR6b-kA6nUZ2M4hBp0o916iPtkTJ_BqxQAVCw/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(() => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(() => msg.innerHTML = "", 5000)
+        form.reset()
+    })
+})
 </script>
+
 </body>
 </html>
